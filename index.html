@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Registro de Pacientes</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <form action="Conexion/auxConexion.php" method="POST" class="formulario" id="formulario" name="formulario">
+
+            
+            <div class="contenedor-inputs">
+                <P>INGRESE LA OPCION QUE DESEA REALIZAR</P>
+                <select name="opcion">
+                    <option>Seleccione:</option>
+                    <option>Registrar</option>
+                    <option>Mostrar</option>
+                    <option>Modificar Por ID</option>
+                    <option>Deshabilitar Por ID</option>
+                  </select>
+
+                <input type="number" id="id" name="id" placeholder="Ingrese ID para editar Direccion">
+                
+                <input type="number" id="cui" name="cui" placeholder="Código Unico de Identificación">
+                <input type="text" name="nombres" placeholder="Nombres">
+                <input type="text" name="apellidos" placeholder="Apellidos">
+                <input type="date" name="dateH"><br> <br>
+                <input type="text" name="direccion" placeholder="Dirección">
+
+                <input type="text" name="nombresP" placeholder="Nombre del Padre">
+                <input type="text" name="nombresM" placeholder="Nombre de la Madre">
+                <input type="email" name="correo" placeholder="Correo Electrónico">
+                <ul class="error" id="error"></ul>
+            </div>
+
+            <input type="submit" class="btn" value="REALIZAR ACCION">
+
+           
+
+        </form>
+    </div>
+    
+    <!-- <script src="JS/validaciones.js"></script> -->
+</body>
+
+</html>
